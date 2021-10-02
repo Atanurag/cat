@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+	<title>Document</title>
+
+	<style>
+
+	.container1{
+		margin: auto;
+text-align: center;
+    margin-top: 68px;
+    border: 2px solid black;
+    width: 75%;
+    
+	}
+	h3{
+		color:orange;
+
+font-size: 2rem;
+	}
+ #gobtn{
+ 	font-size: 17px;
+ 	color:brown;
+    margin-bottom: 12px;
+    height: 24px;
+    width: 70px;
+    background-color: beige;
+    border-radius: 12px;
+}
+
+#catbox{
+	justify-content: space-around;
+display: flex;
+border: 4px solid  brown;
+	flex-wrap: wrap ;
+}
+#catbox img{
+box-shadow: 9px 4px 8px black;
+	
+	display: flex;
+	margin: 10px;
+	height:75%;
+	width: 150px;
+}
+</style>
+</head>
+<body>
+
+
+
+
+
+<div class="container1">
+	
+<h3> GENERATE-CAT</h3>
+<button id="gobtn" onclick="cat()"> go</button>
+
+
+<div id="catbox">
+
+	
+</div>
+
+</div>
+
+
+<script>
+	
+
+
+
+	function cat(){
+
+var image=document.createElement("img");
+var div=document.getElementById("catbox");
+image.src="cat.gif";
+div.appendChild(image);
+
+}
+</script>
+
+
+
+
+	
+</body>
+</html>
